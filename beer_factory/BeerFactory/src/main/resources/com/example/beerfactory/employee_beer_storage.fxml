@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.beerfactory.EmployeeBeerStorageController">
+    <children>
+        <Label layoutX="248.0" layoutY="44.0" text="Склад бутылок">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TableView fx:id="BOTTLES" layoutX="200.0" layoutY="87.0" prefHeight="200.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="NAME" prefWidth="98.66668701171875" text="название" />
+                <TableColumn fx:id="AMOUNT" prefWidth="100.0" text="кол-во" />
+            </columns>
+        </TableView>
+        <Button fx:id="ADD" layoutX="262.0" layoutY="344.0" mnemonicParsing="false" onAction="#initialize" text="Пополнить" />
+        <Button fx:id="BACK" layoutX="510.0" layoutY="344.0" mnemonicParsing="false" onAction="#initialize" text="Назад" />
+        <TextField fx:id="ADD_AMOUNT" layoutX="226.0" layoutY="299.0" promptText="кол-во" />
+    </children>
+</AnchorPane>

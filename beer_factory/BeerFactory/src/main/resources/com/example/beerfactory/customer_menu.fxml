@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.beerfactory.CustomerMenuController">
+    <children>
+        <AnchorPane layoutX="198.0" layoutY="1.0" prefHeight="86.0" prefWidth="205.0">
+            <children>
+                <Label alignment="CENTER" layoutX="-91.0" layoutY="55.0" prefHeight="68.0" prefWidth="397.0" text="Личный кабинет покупателя">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <Button fx:id="CANDIDATE_DATA" layoutX="229.0" layoutY="127.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="142.0" text="Личные данные" />
+      <Button fx:id="CANDIDATE_VACANCIES" layoutX="230.0" layoutY="266.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="142.0" text="Заказы" />
+      <Button fx:id="CANDIDATE_APPS" layoutX="230.0" layoutY="220.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="142.0" text="Корзина" />
+      <Button fx:id="CANDIDATE_WRITE" layoutX="229.0" layoutY="175.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="142.0" text="Каталог" />
+      <Button fx:id="CANDIDATE_EXIT" layoutX="275.0" layoutY="350.0" mnemonicParsing="false" onAction="#initialize" text="Выйти" />
+    </children>
+</AnchorPane>

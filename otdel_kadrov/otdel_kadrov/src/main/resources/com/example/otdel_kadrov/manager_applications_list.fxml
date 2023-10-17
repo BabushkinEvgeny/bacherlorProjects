@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.otdel_kadrov.manager_applications_list_controller">
+   <children>
+      <TableView fx:id="TABLE" layoutX="-1.0" layoutY="100.0" prefHeight="217.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="STATUS" prefWidth="75.0" text="Status" />
+            <TableColumn fx:id="EXAMINER" prefWidth="75.0" text="Examiner" />
+            <TableColumn fx:id="DESCRIPTION" prefWidth="372.6666717529297" text="Description" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="223.0" layoutY="46.0" text="Список заявлений">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="ID_APP" layoutX="14.0" layoutY="341.0" prefHeight="25.0" prefWidth="47.0" promptText="id" />
+      <Button fx:id="SET" layoutX="74.0" layoutY="341.0" mnemonicParsing="false" text="назначить" />
+      <Button fx:id="BACK" layoutX="534.0" layoutY="341.0" mnemonicParsing="false" text="назад" />
+      <Button fx:id="RELOAD" layoutX="457.0" layoutY="341.0" mnemonicParsing="false" text="обновить" />
+      <TextField fx:id="ID_EXAMINER" layoutX="162.0" layoutY="341.0" prefHeight="25.0" prefWidth="47.0" promptText="id" />
+      <ImageView fitHeight="102.0" fitWidth="122.0">
+         <image>
+            <Image url="C:\Users\zheny\IdeaProjects\otdel_kadrov\src\main\images\logo_vert.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="ERROR" layoutX="286.0" layoutY="345.0" />
+   </children>
+</AnchorPane>

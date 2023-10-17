@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.beerfactory.CustomerCatalogController">
+   <children>
+      <Label layoutX="264.0" layoutY="42.0" text="Каталог">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="CATALOG" layoutX="6.0" layoutY="78.0" prefHeight="200.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="NAME" prefWidth="115.33334350585938" text="Название" />
+            <TableColumn fx:id="DESCRIPTION" prefWidth="214.0" text="Описание" />
+            <TableColumn fx:id="TYPE" minWidth="0.0" prefWidth="100.66668701171875" text="Тип" />
+            <TableColumn fx:id="VALUE" minWidth="0.0" prefWidth="83.99993896484375" text="Цена за литр" />
+        </columns>
+      </TableView>
+      <Button fx:id="ADD" layoutX="378.0" layoutY="360.0" mnemonicParsing="false" onAction="#initialize" text="Добавить в корзину" />
+      <Button fx:id="BACK" layoutX="521.0" layoutY="360.0" mnemonicParsing="false" onAction="#initialize" text="Назад" />
+      <ComboBox fx:id="BOTTLE" layoutX="33.0" layoutY="325.0" prefWidth="150.0" />
+      <TextField fx:id="AMOUNT" layoutX="226.0" layoutY="325.0" />
+      <Label layoutX="94.0" layoutY="295.0" text="Тара" />
+      <Label layoutX="280.0" layoutY="295.0" text="Кол-во" />
+   </children>
+</AnchorPane>

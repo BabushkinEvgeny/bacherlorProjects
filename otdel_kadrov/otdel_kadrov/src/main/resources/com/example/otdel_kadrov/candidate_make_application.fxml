@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.otdel_kadrov.candidate_make_application_controller">
+   <children>
+      <Label alignment="CENTER" layoutX="217.0" layoutY="32.0" text="Написать заявление">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="BACK" layoutX="521.0" layoutY="361.0" mnemonicParsing="false" onAction="#initialize" text="назад" />
+      <ChoiceBox fx:id="POSITION" layoutX="65.0" layoutY="100.0" prefWidth="150.0" />
+      <TextArea fx:id="DESCRIPTION" layoutX="345.0" layoutY="100.0" prefHeight="242.0" prefWidth="200.0" />
+      <Button fx:id="SEND" layoutX="101.0" layoutY="361.0" mnemonicParsing="false" onAction="#initialize" text="отправить" />
+      <Button fx:id="INSERT" layoutX="99.0" layoutY="150.0" mnemonicParsing="false" onAction="#initialize" text="применить" />
+      <ListView fx:id="SKILLS" layoutX="40.0" layoutY="200.0" prefHeight="138.0" prefWidth="200.0" />
+      <ImageView fitHeight="96.0" fitWidth="113.0">
+         <image>
+            <Image url="C:\Users\zheny\IdeaProjects\otdel_kadrov\src\main\images\logo_vert.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="ERROR" layoutX="286.0" layoutY="365.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.otdel_kadrov.manager_positions_controller">
+   <children>
+      <Label alignment="CENTER" layoutX="242.0" layoutY="46.0" prefHeight="31.0" prefWidth="125.0" text="Позиции">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="REQUIREMENT_FIELD" layoutX="55.0" layoutY="194.0" promptText="Добавить требование" />
+      <Button fx:id="ADD_REQUIREMENT" layoutX="98.0" layoutY="229.0" mnemonicParsing="false" onAction="#initialize" text="Вставить" />
+      <ChoiceBox fx:id="POSITIONS" layoutX="55.0" layoutY="139.0" prefWidth="150.0" />
+      <Label layoutX="64.0" layoutY="113.0" text="Изменение требований" />
+      <TableView fx:id="REQUIREMENTS" layoutX="237.0" layoutY="113.0" prefHeight="200.0" prefWidth="136.0">
+        <columns>
+          <TableColumn fx:id="COLUMN" prefWidth="135.33331298828125" text="Требования" />
+        </columns>
+      </TableView>
+      <Button fx:id="DELETE_REQUIREMENT" layoutX="100.0" layoutY="267.0" mnemonicParsing="false" onAction="#initialize" text="Удалить" />
+      <Button fx:id="RELOAD" layoutX="269.0" layoutY="321.0" mnemonicParsing="false" onAction="#initialize" text="Обновить" />
+      <Button fx:id="BACK" layoutX="31.0" layoutY="346.0" mnemonicParsing="false" onAction="#initialize" text="Назад" />
+      <TextField fx:id="ADD_POSITION_FIELD" layoutX="410.0" layoutY="110.0" promptText="Добавить профессию" />
+      <Button fx:id="ADD_POSITION" layoutX="452.0" layoutY="200.0" mnemonicParsing="false" onAction="#initialize" text="Вставить" />
+      <Button fx:id="DELETE_POSITION" layoutX="454.0" layoutY="238.0" mnemonicParsing="false" onAction="#initialize" text="Удалить" />
+      <TextField fx:id="ADD_VACCANCIES_FIELD" layoutX="409.0" layoutY="287.0" promptText="Кол-во мест" />
+      <Button fx:id="ADD_VACCANCIES_BUTTON" layoutX="452.0" layoutY="321.0" mnemonicParsing="false" onAction="#initialize" text="Вставить" />
+      <Label fx:id="AMOUNT" layoutX="286.0" layoutY="84.0" />
+      <TextField fx:id="WORKING_RATE" layoutX="409.0" layoutY="152.0" promptText="Ставка" />
+      <ImageView fitHeight="91.0" fitWidth="110.0">
+         <image>
+            <Image url="C:\Users\zheny\IdeaProjects\otdel_kadrov\src\main\images\logo_vert.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="ERROR" layoutX="116.0" layoutY="350.0" />
+   </children>
+</AnchorPane>

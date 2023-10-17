@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.beerfactory.CustomerBankController">
+   <children>
+      <Button fx:id="BACK" layoutX="274.0" layoutY="349.0" mnemonicParsing="false" onAction="#initialize" text="Назад" />
+      <Button fx:id="PAY" layoutX="262.0" layoutY="257.0" mnemonicParsing="false" onAction="#initialize" text="Пополнить" />
+      <TextField fx:id="AMOUNT" layoutX="226.0" layoutY="221.0" />
+      <Label layoutX="220.0" layoutY="51.0" text="Пополнить заказ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

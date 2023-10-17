@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.otdel_kadrov.employees_examine_controller">
+   <children>
+      <Label layoutX="271.0" layoutY="27.0" text="Заявления">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TableView fx:id="TABLE" layoutX="1.0" layoutY="100.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="NAME" prefWidth="138.66668701171875" text="Name" />
+            <TableColumn fx:id="PURPOSE" prefWidth="96.66667175292969" text="Purpose" />
+          <TableColumn fx:id="STATUS" prefWidth="80.66668701171875" text="status" />
+            <TableColumn fx:id="DESCRIPTION" prefWidth="207.33334350585938" text="description" />
+        </columns>
+      </TableView>
+      <Button fx:id="BACK" layoutX="23.0" layoutY="345.0" mnemonicParsing="false" onAction="#examine" text="Назад" />
+      <Button fx:id="ACCEPT" layoutX="415.0" layoutY="345.0" mnemonicParsing="false" onAction="#examine" text="Принять" />
+      <Button fx:id="DECLINE" layoutX="498.0" layoutY="345.0" mnemonicParsing="false" onAction="#examine" text="Отклонить" />
+      <Button fx:id="RELOAD" layoutX="510.0" layoutY="44.0" mnemonicParsing="false" onAction="#examine" text="Обновить" />
+      <ImageView fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="C:\Users\zheny\IdeaProjects\otdel_kadrov\src\main\images\logo_vert.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

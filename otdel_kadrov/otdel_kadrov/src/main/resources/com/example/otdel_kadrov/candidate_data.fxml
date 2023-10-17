@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.otdel_kadrov.candidate_data_controller">
+   <children>
+      <Label alignment="CENTER" layoutX="224.0" layoutY="34.0" prefHeight="17.0" prefWidth="147.0" text="Личные данные">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="69.0" layoutY="145.0" text="Имя" />
+      <Label alignment="CENTER" layoutX="56.0" layoutY="186.0" text="Фамилия" />
+      <Label alignment="CENTER" layoutX="387.0" layoutY="153.0" text="Логин" />
+      <Label alignment="CENTER" layoutX="61.0" layoutY="225.0" text="СНИЛС" />
+      <Label fx:id="NAME" layoutX="149.0" layoutY="145.0" prefHeight="17.0" prefWidth="70.0" text="Label" />
+      <Label fx:id="SURNAME" layoutX="149.0" layoutY="186.0" prefHeight="17.0" prefWidth="70.0" text="Label" />
+      <Label fx:id="LOGIN" layoutX="474.0" layoutY="153.0" prefHeight="17.0" prefWidth="70.0" text="Label" />
+      <Label fx:id="SNILS" layoutX="149.0" layoutY="225.0" prefHeight="17.0" prefWidth="70.0" text="Label" />
+      <Button fx:id="CANDIDATE_DATA_EXIT" layoutX="274.0" layoutY="350.0" mnemonicParsing="false" onAction="#initialize" text="назад" />
+      <Button layoutX="387.0" layoutY="204.0" mnemonicParsing="false" text="Сменить вароль" />
+      <ImageView fitHeight="95.0" fitWidth="105.0" layoutX="4.0">
+         <image>
+            <Image url="C:\Users\zheny\IdeaProjects\otdel_kadrov\src\main\images\logo_vert.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
